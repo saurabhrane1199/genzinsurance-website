@@ -6,10 +6,8 @@ import classnames from "classnames";
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  Collapse,
   NavbarBrand,
   Navbar,
-  Nav,
   Container,
   UncontrolledTooltip,
 } from "reactstrap";
@@ -19,7 +17,6 @@ import {
 function MultiDropdownNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [bodyClick, setBodyClick] = React.useState(false);
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -51,7 +48,6 @@ function MultiDropdownNavbar() {
           onClick={() => {
             document.documentElement.classList.toggle("nav-open");
             setBodyClick(false);
-            setCollapseOpen(false);
           }}
         />
       ) : null}
@@ -80,28 +76,7 @@ function MultiDropdownNavbar() {
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
               GenZ
             </UncontrolledTooltip>
-            <button
-              className="navbar-toggler"
-              id="navigation"
-              type="button"
-              onClick={() => {
-                document.documentElement.classList.toggle("nav-open");
-                setBodyClick(true);
-                setCollapseOpen(true);
-              }}
-            >
-              <span className="navbar-toggler-bar bar1"></span>
-              <span className="navbar-toggler-bar bar2"></span>
-              <span className="navbar-toggler-bar bar3"></span>
-            </button>
           </div>
-          <Collapse navbar isOpen={collapseOpen}>
-            <Nav className="ml-auto" navbar>
-              {/* <NavItem>
-                <NavLink href="#">Link</NavLink>
-              </NavItem> */}
-            </Nav>
-          </Collapse>
         </Container>
       </Navbar>
     </>
