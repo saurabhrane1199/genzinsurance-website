@@ -2,6 +2,11 @@
   "name": "paper-kit-pro-react",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.13.4",
+    "node": "12.16.1"
+  },
+
   "dependencies": {
     "classnames": "2.2.6",
     "headroom.js": "0.11.0",
