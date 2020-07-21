@@ -37,10 +37,19 @@ function LandingPage() {
         <div className="section text-center landing-section">
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto" md="8">
+              <Col className="ml-auto mr-auto" md="10">
                 <h2 className="title">Let's talk product</h2>
                 <h5>
                 We, at Gen Z Insurance, are providing robust crop insurance policies to the farmers that bring private investors together, like never before, for an opportunity to diversify their portfolio and invest in the lifeline of our economy. Through our system, investors come together to rescue our farmers to enable mitigate risk effectively, making the process “aatmanirbhar”.
+                </h5>
+                <h5 style={{textAlign:"center !important"}}>
+                With the Prime Minister’s call to be “self sufficient” or “aatmanirbhar”, we present a <b>decentralised p2p
+crop insurance</b> framework which enables to overcome the current disadvantages by securing farmers’
+interests, eliminating intermediaries and providing a <b>secure, standardized, and transparent system</b> that
+does not hinder any information from stakeholders. Through blockchain technology, the system
+promotes trust in a trust less environment wherein the farmers and the private investors go into a
+contract. The investors pool their investments and provide cover for the farmers, thus help the nation
+become self sufficient and help the farmers prosper.
                 </h5>
                 <br />
                 {/* <Button
@@ -176,8 +185,9 @@ function LandingPage() {
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/saurabhrane99"
+                      target="_blank"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -226,8 +236,9 @@ function LandingPage() {
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/vinayak_iyer_"
+                      target="_blank"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -275,8 +286,9 @@ function LandingPage() {
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/shahkshitij15"
+                      target="_blank"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
